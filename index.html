@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="index.css" rel="stylesheet" />
+        <title>form-validator</title>
+    </head>
+    <body>
+        <div class="container">
+            <form id="form" class="form">
+                <h2>Register with Us 🪐</h2>
+                <div class="form-control">
+                    <label for="userName">User Name </label>
+                    <input id="userName" type="text" placeholder="Enter user name" />
+                    <small>Error message</small>
+                    <!-- 덧붙이는 글 (js를 통해서 event가 발생할 때 나타나게 적용 가능)-->
+                </div>
+
+                <div class="form-control">
+                    <label for="email"> Email </label>
+                    <input id="email" type="text" placeholder="Enter email" />
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="password"> Password </label>
+                    <input id="password" type="password" placeholder="Enter password" />
+                    <small>Error message</small>
+                </div>
+
+                <div class="form-control">
+                    <label for="password2"> Confirm Password </label>
+                    <input id="password2" type="password" placeholder="Enter password again" />
+                    <small>Error message</small>
+                </div>
+
+                <button type="submit">Submit</button>
+            </form>
+
+            <script src="index.js"></script>
+        </div>
+    </body>
+</html>
