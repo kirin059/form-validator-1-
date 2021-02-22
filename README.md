@@ -1,6 +1,7 @@
 # form-validator 만들기 (1)
-## html, javascript
+## javascript
 
+![image](https://user-images.githubusercontent.com/71425369/108646408-156bd800-74f9-11eb-851f-93ec88137d11.png)
 
 ---
 
