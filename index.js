@@ -75,6 +75,8 @@ function checkPasswordsMatch(input1, input2) {
 form.addEventListener("submit", function (e) {
     // console.log(e.target);
     e.preventDefault();
+    // preventDefault를 해주지 않으면, submit됨과 동시에 창이 다시 실행된다(초기화면으로 돌아옴)
+    // preventDefault를 적용해주면, 새로 이동되는 것을 막아준다
 
     if (!checkRequired([username, email, password, password2])) {
         checkLength(username, 3, 15);
@@ -83,3 +85,7 @@ form.addEventListener("submit", function (e) {
         checkPasswordsMatch(password, password2);
     }
 });
+
+// form의 submit을 눌렀을 때, 발생하는 success와 error메시지 관련 기능 구현
+// 전체 input중에서 하나라도 정상입력이 아닐 경우, 해당 함수들이 실행
+// 정상이면 초록색이 뜨고, 정상이 아닌 값에 대해선는 빨간색(error)이 뜬다
