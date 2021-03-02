@@ -52,7 +52,7 @@ function checkLength(input, min, max) {
 function checkRequired(inputArr) {
     let isRequired = false;
     inputArr.forEach(function (input) {
-        if (input.value.trim() === "") {
+        if (input.value.length < 0) {
             // 값이 없으면
             showError(input, `${getFieldName(input)} is required`);
             isRequired = true;
